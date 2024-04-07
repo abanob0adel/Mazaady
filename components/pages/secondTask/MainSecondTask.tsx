@@ -1,3 +1,4 @@
+import QrCard from "./QrCard";
 import UserCard from "./UserCard";
 
 export default function MainSecondTask() {
@@ -7,6 +8,7 @@ export default function MainSecondTask() {
         <div className="flex justify-between items-start gap-4 flex-col lg:flex-row">
           <div className="lg:w-[30%] w-full flex flex-col gap-4">
             <UserCard />
+            <QrCard />
           </div>
           <div className="lg:w-[68%] w-full"></div>
         </div>

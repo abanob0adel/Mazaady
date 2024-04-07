@@ -16,7 +16,7 @@ export default function UserCard() {
           height={100}
           className="rounded-[24px] mb-4"
         />
-        <MainTitle title={"Hala Ahmed"} size={"24"} />
+        <MainTitle title={"Hala Ahmed"} />
         <p className="text-[#4f4f4f] text-[14px] font-[400] lg:w-[90%]">
           I am Hala Ahmed, I am the owner of the local brand called Beauty which
           is for Mackeup and Skin Care.
@@ -26,7 +26,7 @@ export default function UserCard() {
             <div className="bg-[#fff5e9] p-2 rounded-[18px] flex lg:gap-4 gap-2 items-center">
               <Following />
               <div>
-                <MainTitle title="5" size="14" />
+                <h2 className="text-[14px] font-[700] text-[#363333]">5</h2>
                 <h4 className="text-[12px] text-[#ff951d] font-[400]">
                   Following
                 </h4>
@@ -37,7 +37,7 @@ export default function UserCard() {
             <div className="bg-[#fff5e9] p-2 rounded-[18px] flex lg:gap-4 gap-2 items-center">
               <Followers />
               <div>
-                <MainTitle title="20" size="14" />
+                <h2 className="text-[14px] font-[700] text-[#363333]">20</h2>
                 <h4 className="text-[12px] text-[#ff951d] font-[400]">
                   Followers
                 </h4>
@@ -49,7 +49,7 @@ export default function UserCard() {
               <Rate />
               <div>
                 <div className="flex items-center lg:gap-2 gap-1">
-                  <MainTitle title="4.2" size="14" />
+                  <h2 className="text-[14px] font-[700] text-[#363333]">4.2</h2>
                   <span className="text-[10px] font-[400]">(15)</span>
                 </div>
                 <h4 className="text-[12px] text-[#ff951d] font-[400]">Rate</h4>

@@ -1,11 +1,10 @@
 interface TitleType {
   title: string;
-  size: string;
 }
 
-const MainTitle: React.FC<TitleType> = ({ title, size }) => {
+const MainTitle: React.FC<TitleType> = ({ title }) => {
   return (
-    <h2 className="text-[#000] font-[700]" style={{ fontSize: size + "px" }}>
+    <h2 className="text-[#000] font-[700] lg:text-[24px] text-[18px]">
       {title}
     </h2>
   );
