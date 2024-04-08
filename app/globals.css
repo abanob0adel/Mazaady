@@ -78,3 +78,21 @@
 body {
   background-color: rgba(246, 244, 245, 1);
 }
+.product-title {
+  display: -webkit-box;
+  width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 767px) {
+  .product-title {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}

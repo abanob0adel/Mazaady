@@ -1,3 +1,4 @@
+import MainCard from "./MainCard";
 import QrCard from "./QrCard";
 import UserCard from "./UserCard";
 
@@ -10,7 +11,9 @@ export default function MainSecondTask() {
             <UserCard />
             <QrCard />
           </div>
-          <div className="lg:w-[68%] w-full"></div>
+          <div className="lg:w-[68%] w-full">
+            <MainCard />
+          </div>
         </div>
       </div>
     </>
