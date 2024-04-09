@@ -53,6 +53,7 @@ export default function MainFirst() {
               categories={mainCategory.categories}
               onCategorySelect={handleSelectCategory}
               placeholder="Categories"
+              value={selectedCategoryId}
             />
           </div>
         )}
@@ -68,6 +69,7 @@ export default function MainFirst() {
               }
               onCategorySelect={handleSubCategory}
               placeholder="Sub Categories"
+              value={selectedCategorySub}
             />
           </div>
         ) : (

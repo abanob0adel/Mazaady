@@ -14,12 +14,14 @@ interface CategorySelectProps {
   categories: any;
   onCategorySelect: (categoryId: string) => void;
   placeholder: string;
+  value?: string;
 }
 
 const SelectComponentWithSearch: React.FC<CategorySelectProps> = ({
   categories,
   onCategorySelect,
   placeholder,
+  value,
 }) => {
   const [searchValue, setSearchValue] = useState("");
 
@@ -36,6 +38,7 @@ const SelectComponentWithSearch: React.FC<CategorySelectProps> = ({
       onValueChange={(value) => {
         handleSelectCategory(value);
       }}
+      defaultValue={value}
     >
       <SelectTrigger className="w-[360px]">
         <SelectValue placeholder={placeholder} />
