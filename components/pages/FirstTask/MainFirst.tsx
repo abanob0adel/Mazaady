@@ -18,12 +18,13 @@ export default function MainFirst() {
     queryFn: async () => await getAllCategories(),
   });
   const {
-    isFetching: getOptionFetch,
+    isFetching: optionFetching,
     data: getOptions,
-    refetch,
+    refetch: optionRefetch,
   } = useQuery<PropertiesResponse>({
     queryKey: ["options"],
     queryFn: async () => await getProperties({ id: selectedCategorySub }),
+    enabled: !!selectedCategorySub,
   });
 
   const handleSelectCategory = (categoryId: string) => {
@@ -34,10 +35,10 @@ export default function MainFirst() {
   };
   useEffect(() => {
     if (selectedCategorySub) {
-      refetch();
+      optionRefetch();
     }
   }, [selectedCategorySub]);
-  if (isFetching || getOptionFetch) {
+  if (isFetching || optionFetching) {
     return <Loading />;
   }
 
